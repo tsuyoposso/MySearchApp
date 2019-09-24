@@ -13,6 +13,7 @@
 		FE4B92D623308705004AA953 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4B92D523308705004AA953 /* Assets.xcassets */; };
 		FE4B92D923308705004AA953 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE4B92D723308705004AA953 /* LaunchScreen.storyboard */; };
 		FE8EB6162339F02F0021A2A8 /* ItemSearchResultSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8EB6152339F02F0021A2A8 /* ItemSearchResultSet.swift */; };
+		FE8EB6182339FBD90021A2A8 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8EB6172339FBD90021A2A8 /* ItemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FE4B92D823308705004AA953 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE4B92DA23308705004AA953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE8EB6152339F02F0021A2A8 /* ItemSearchResultSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSearchResultSet.swift; sourceTree = "<group>"; };
+		FE8EB6172339FBD90021A2A8 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				FE4B92D0233086FE004AA953 /* ViewController.swift */,
 				FE4B92D2233086FE004AA953 /* Main.storyboard */,
 				FE8EB6152339F02F0021A2A8 /* ItemSearchResultSet.swift */,
+				FE8EB6172339FBD90021A2A8 /* ItemTableViewCell.swift */,
 				FE4B92D523308705004AA953 /* Assets.xcassets */,
 				FE4B92D723308705004AA953 /* LaunchScreen.storyboard */,
 				FE4B92DA23308705004AA953 /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE8EB6182339FBD90021A2A8 /* ItemTableViewCell.swift in Sources */,
 				FE4B92D1233086FE004AA953 /* ViewController.swift in Sources */,
 				FE8EB6162339F02F0021A2A8 /* ItemSearchResultSet.swift in Sources */,
 				FE4B92CF233086FE004AA953 /* AppDelegate.swift in Sources */,
