@@ -14,6 +14,7 @@
 		FE4B92D923308705004AA953 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE4B92D723308705004AA953 /* LaunchScreen.storyboard */; };
 		FE8EB6162339F02F0021A2A8 /* ItemSearchResultSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8EB6152339F02F0021A2A8 /* ItemSearchResultSet.swift */; };
 		FE8EB6182339FBD90021A2A8 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8EB6172339FBD90021A2A8 /* ItemTableViewCell.swift */; };
+		FE8EB61C233A15630021A2A8 /* SearchItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8EB61B233A15630021A2A8 /* SearchItemTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FE4B92DA23308705004AA953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE8EB6152339F02F0021A2A8 /* ItemSearchResultSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSearchResultSet.swift; sourceTree = "<group>"; };
 		FE8EB6172339FBD90021A2A8 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		FE8EB61B233A15630021A2A8 /* SearchItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				FE4B92D2233086FE004AA953 /* Main.storyboard */,
 				FE8EB6152339F02F0021A2A8 /* ItemSearchResultSet.swift */,
 				FE8EB6172339FBD90021A2A8 /* ItemTableViewCell.swift */,
+				FE8EB61B233A15630021A2A8 /* SearchItemTableViewController.swift */,
 				FE4B92D523308705004AA953 /* Assets.xcassets */,
 				FE4B92D723308705004AA953 /* LaunchScreen.storyboard */,
 				FE4B92DA23308705004AA953 /* Info.plist */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE8EB61C233A15630021A2A8 /* SearchItemTableViewController.swift in Sources */,
 				FE8EB6182339FBD90021A2A8 /* ItemTableViewCell.swift in Sources */,
 				FE4B92D1233086FE004AA953 /* ViewController.swift in Sources */,
 				FE8EB6162339F02F0021A2A8 /* ItemSearchResultSet.swift in Sources */,
