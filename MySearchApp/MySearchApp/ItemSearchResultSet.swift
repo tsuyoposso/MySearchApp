@@ -41,7 +41,7 @@ class Result: Codable {
             Int($0.rawValue)! < Int($1.rawValue)!
         }
         
-        for ey in keys {
+        for key in keys {
             
             let item = try container.decode(ItemData.self, forKey: key)
             
@@ -111,7 +111,7 @@ class ItemData: Codable {
     
     var priceInfo: PriceInfo = PriceInfo()
     
-    private enum CodingKeys: String, Codingkey {
+    private enum CodingKeys: String, CodingKey {
         case name = "Name"
         case url = "url"
         case imageInfo = "Image"

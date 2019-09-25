@@ -17,7 +17,7 @@ class SearchItemTableViewController: UITableViewController, UISearchBarDelegate 
     
     let appid = "dj00aiZpPU44VFpSRXJjaXBqMiZzPWNvbnN1bWVyc2VjcmV0Jng9NmU-"
     
-    let entryURL: String = "https://shopping.yahooapis.jp/ShoppingWebService/V1/json/itemSearch"
+    let entryUrl: String = "https://shopping.yahooapis.jp/ShoppingWebService/V1/json/itemSearch"
     
     let priceFormat = NumberFormatter()
 
@@ -48,7 +48,7 @@ class SearchItemTableViewController: UITableViewController, UISearchBarDelegate 
         let requestUrl = createRequestUrl(parameter: parameter)
         
         
-        request(requestUrl: requesturl)
+        request(requestUrl: requestUrl)
         
         searchBar.resignFirstResponder()
     }
@@ -97,7 +97,7 @@ class SearchItemTableViewController: UITableViewController, UISearchBarDelegate 
         let task = session.dataTask(with: request) { (data:Data?, responce:URLResponse?, error:Error?) in
             
             guard error == nil else {
-                let alert = UIAlertController(title: "エラー", message: error?.localizedDescription, preferredStyle: UIAlertActionController.Style.alert)
+                let alert = UIAlertController(title: "エラー", message: error?.localizedDescription, preferredStyle: UIAlertController.Style.alert)
                 DispatchQueue.main.async {
                     self.present(alert, animated: true, completion: nil)
                 }
@@ -157,7 +157,7 @@ class SearchItemTableViewController: UITableViewController, UISearchBarDelegate 
             return cell
         }
         
-        if let cacheImage = imageCache.object(forKey: itemImageUrl as Anyobject) {
+        if let cacheImage = imageCache.object(forKey: itemImageUrl as AnyObject) {
             cell.itemImageView.image = cacheImage
             return cell
         }
@@ -173,6 +173,9 @@ class SearchItemTableViewController: UITableViewController, UISearchBarDelegate 
                 return
             }
             guard let data = data else {
+                return
+            }
+            guard let image = UIImage(data: data) else {
                 return
             }
             

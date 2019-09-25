@@ -86,10 +86,10 @@
             </objects>
             <point key="canvasLocation" x="1567.2" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Web View Controller-->
         <scene sceneID="WSP-ey-wph">
             <objects>
-                <viewController id="z20-gb-2mt" sceneMemberID="viewController">
+                <viewController id="z20-gb-2mt" customClass="WebViewController" customModule="MySearchApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="skJ-Xn-QuX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,6 +113,9 @@
                         <viewLayoutGuide key="safeArea" id="rLp-7n-mnb"/>
                     </view>
                     <navigationItem key="navigationItem" id="NqP-t4-tDI"/>
+                    <connections>
+                        <outlet property="webView" destination="rO3-Iu-aQo" id="0KH-fy-ZGn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7KH-RY-05E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
