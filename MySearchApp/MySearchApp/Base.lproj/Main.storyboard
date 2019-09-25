@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Search Item Table View Controller-->
         <scene sceneID="1Ih-qA-Bsn">
             <objects>
-                <tableViewController id="hw9-7g-RzD" sceneMemberID="viewController">
+                <tableViewController id="hw9-7g-RzD" customClass="SearchItemTableViewController" customModule="MySearchApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="CbH-rO-RCm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,7 +25,7 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" id="DaQ-Dg-cQf">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" id="DaQ-Dg-cQf" customClass="ItemTableViewCell" customModule="MySearchApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DaQ-Dg-cQf" id="3lh-cU-4bA">
@@ -68,6 +68,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="itemImageView" destination="KGt-gk-8cR" id="iQD-BS-HxD"/>
+                                    <outlet property="itemPriceLabel" destination="QLa-w3-4A3" id="3kr-i9-1Ck"/>
+                                    <outlet property="itemTitleLabel" destination="IRW-3F-77w" id="nMw-QD-Lzc"/>
                                     <segue destination="z20-gb-2mt" kind="show" id="Rcf-Bq-jch"/>
                                 </connections>
                             </tableViewCell>
@@ -83,10 +86,10 @@
             </objects>
             <point key="canvasLocation" x="1567.2" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Web View Controller-->
         <scene sceneID="WSP-ey-wph">
             <objects>
-                <viewController id="z20-gb-2mt" sceneMemberID="viewController">
+                <viewController id="z20-gb-2mt" customClass="WebViewController" customModule="MySearchApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="skJ-Xn-QuX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,6 +113,9 @@
                         <viewLayoutGuide key="safeArea" id="rLp-7n-mnb"/>
                     </view>
                     <navigationItem key="navigationItem" id="NqP-t4-tDI"/>
+                    <connections>
+                        <outlet property="webView" destination="rO3-Iu-aQo" id="0KH-fy-ZGn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7KH-RY-05E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
